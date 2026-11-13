@@ -32,10 +32,10 @@ function Cierre_() {
         <div className="t-meta" style={{ fontSize: 24 }}>{config.author}</div>
       </Reveal>
       {qr && (
-        <Reveal on={here && b === 2} x={1440} y={330} delay={300}>
-          <QR url={config.qrUrl} size={320} />
+        <Reveal on={here && b === 2} x={1200} y={230} delay={300}>
+          <QR url={config.qrUrl} size={560} />
           {config.qrLabel && (
-            <div className="t-meta" style={{ fontSize: 18, marginTop: 24, width: 320, textAlign: 'center', textTransform: 'none', letterSpacing: '0.02em' }}>{config.qrLabel}</div>
+            <div className="t-meta" style={{ fontSize: 32, marginTop: 28, width: 560, textAlign: 'center', textTransform: 'none', letterSpacing: '0.02em' }}>{config.qrLabel}</div>
           )}
         </Reveal>
       )}

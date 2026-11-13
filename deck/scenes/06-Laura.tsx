@@ -1,68 +1,57 @@
 import { Reveal, Scene, useScene } from 'beatdeck';
-import detailHome from '../assets/detail-home.png';
-import detailChats from '../assets/detail-chats.png';
-import detailChatsTabs from '../assets/detail-chats-tabs.png';
-import detailQr from '../assets/detail-qr.png';
 
-const SHOT: React.CSSProperties = { display: 'block', borderRadius: 28, boxShadow: '0 0 0 1px var(--hair-strong)' };
-const CAPTION: React.CSSProperties = { fontSize: 56 };
+const STEPS = [
+  'Encuentra un evento afín',
+  'Conoce a Marcos',
+  'Continúan la conversación',
+];
+const X = (k: number) => 150 + k * 600;
 
-/** One detail per beat, each leaving as the next one arrives. */
 function Laura_() {
   const { here, b } = useScene();
-  const at = (k: number) => ({ on: here && b === k, out: here && b > k });
   return (
     <>
       <Reveal on={here} x={168} y={100}>
         <div className="t-eyebrow">Laura · Ejemplo ilustrativo</div>
       </Reveal>
 
-      {/* 07.1 */}
-      <Reveal {...at(0)} x={150} y={340}>
+      {/* 06.1 */}
+      <Reveal on={here && b === 0} out={here && b > 0} x={150} y={340}>
         <div className="t-statement" style={{ fontSize: 124, lineHeight: 1 }}>
           Laura llega por<br />el contenido.
         </div>
       </Reveal>
-      <Reveal {...at(0)} x={150} y={700} delay={300}>
+      <Reveal on={here && b === 0} out={here && b > 0} x={150} y={700} delay={300}>
         <div className="t-statement" style={{ fontSize: 124, color: 'var(--accent)' }}>Se lleva una conexión.</div>
       </Reveal>
 
-      {/* 07.2 she finds an event */}
-      <Reveal {...at(1)} x={310} y={300}>
-        <img src={detailHome} alt="Próximos eventos en la app" style={{ ...SHOT, width: 1300 }} />
+      {/* 06.2 → 06.4 timeline, no images */}
+      <Reveal on={here && b >= 1} x={150} y={300}>
+        <div style={{ width: 1560, height: 1, background: 'var(--hair-strong)' }} />
       </Reveal>
-      <Reveal {...at(1)} x={310} y={720} delay={250}>
-        <div className="t-editorial" style={CAPTION}>Encuentra un evento afín</div>
-      </Reveal>
+      {STEPS.map((text, k) => {
+        const on = here && b >= k + 1;
+        const active = here && b === k + 1;
+        return (
+          <div key={text}>
+            <Reveal on={on} x={X(k)} y={285}>
+              <div style={{ width: 30, height: 30, borderRadius: '50%', background: active ? 'var(--accent)' : 'var(--ink-3)', transition: 'background 400ms' }} />
+            </Reveal>
+            <Reveal on={on} x={X(k)} y={370} delay={150}>
+              <div className="t-eyebrow" style={{ color: active ? 'var(--accent)' : 'var(--ink-3)', transition: 'color 400ms' }}>0{k + 1}</div>
+              <div className="t-statement" style={{ fontSize: 84, lineHeight: 1.02, marginTop: 20, width: 540, whiteSpace: 'normal', color: active ? 'var(--ink)' : 'var(--ink-2)', transition: 'color 400ms' }}>{text}</div>
+            </Reveal>
+          </div>
+        );
+      })}
 
-      {/* 07.3 she meets Marcos and chats */}
-      <Reveal {...at(2)} x={360} y={290}>
-        <img src={detailChats} alt="Lista de chats" style={{ ...SHOT, width: 1200 }} />
-      </Reveal>
-      <Reveal {...at(2)} x={360} y={720} delay={250}>
-        <div className="t-editorial" style={CAPTION}>Conoce a Marcos</div>
-      </Reveal>
-
-      {/* 07.4 they stay in touch */}
-      <Reveal {...at(3)} x={150} y={230} axis="x">
-        <img src={detailQr} alt="Mi código QR en la app" style={{ ...SHOT, width: 520 }} />
-      </Reveal>
-      <Reveal {...at(3)} x={730} y={330} axis="x" delay={150}>
-        <img src={detailChatsTabs} alt="Chats y conexiones" style={{ ...SHOT, width: 1040 }} />
-      </Reveal>
-      <Reveal {...at(3)} x={150} y={800} delay={300}>
-        <div className="t-editorial" style={CAPTION}>Continúan la conversación</div>
-      </Reveal>
-
-      {/* 07.5 */}
-      <Reveal on={here && b >= 4} x={150} y={340}>
-        <div className="t-statement" style={{ fontSize: 124, lineHeight: 1, color: 'var(--accent)' }}>
-          El evento termina;<br />la conexión continúa.
-        </div>
+      {/* 06.5 */}
+      <Reveal on={here && b >= 4} x={150} y={800}>
+        <div className="t-statement" style={{ fontSize: 76, color: 'var(--accent)' }}>El evento termina;<br />la conexión continúa.</div>
       </Reveal>
     </>
   );
 }
 
-/** 06 LAURA — an illustrative example told with details of the app's own screens, one per beat. */
+/** 06 LAURA — an illustrative example as a timeline, text only (same language as the value page). */
 export const Laura = () => <Scene index={5}><Laura_ /></Scene>;

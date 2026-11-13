@@ -10,14 +10,14 @@ const SHOTS = [
   { src: chats, alt: 'Chats', label: 'Habla con asistentes' },
   { src: qr, alt: 'Código QR de contacto', label: 'Confirma el encuentro' },
 ];
-const W = 470;
+const W = 400;
 
 function Asistente_() {
   const { here, b } = useScene();
   return (
     <>
       {/* the journey, always visible: current step in ink, the others dimmed */}
-      <Reveal on={here} x={135} y={100}>
+      <Reveal on={here} x={170} y={100}>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 44 }}>
           {STEPS.map((word, k) => (
             <div key={word} style={{ display: 'flex', alignItems: 'baseline', gap: 44 }}>
@@ -30,10 +30,10 @@ function Asistente_() {
 
       {SHOTS.map((s, i) => (
         <div key={s.label}>
-          <Reveal on={here && b >= i} x={135 + i * (W + 120)} y={250} axis="x">
+          <Reveal on={here && b >= i} x={170 + i * 590} y={270} axis="x">
             <Phone src={s.src} alt={s.alt} w={W} />
           </Reveal>
-          <Reveal on={here && b >= i} x={135 + i * (W + 120)} y={870} delay={250}>
+          <Reveal on={here && b >= i} x={170 + i * 590} y={800} delay={250}>
             <div className="t-editorial" style={{ fontSize: 38, width: W, textAlign: 'center' }}>{s.label}</div>
           </Reveal>
         </div>
