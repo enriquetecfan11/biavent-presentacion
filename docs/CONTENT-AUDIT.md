@@ -21,7 +21,7 @@ Source: `reference/presentacion.md` (8 páginas, 10 min; incluye dirección visu
 | 4 Asistente | Descubrir → Participar → Conectar → Continuar | 4.1–4.4 | kept | `home` (Encuentra un evento), `chats` (Habla con asistentes), `qr-final` (Confirma el encuentro). Una captura por paso: home↔Descubrir, chats↔Participar, QR↔Conectar |
 | 5 Organizador | Organizar mejor y entender qué ocurre en el evento | 5.1–5.2 | **incomplete** | Etiquetas «Gestión del evento» / «Participación e interacción». **Falta la captura del panel** |
 | 6 Valor | Antes / Durante / Después + frase final | 6.1–6.4 | kept | solo línea temporal, sin capturas (la página 4 ya las muestra); 4.º beat = «El evento continúa en las relaciones que empiezan allí.» |
-| 6 Laura | Laura llega por el contenido. Se lleva una conexión. | 6.1–6.5 | kept | línea temporal solo texto (sin imágenes), mismo lenguaje que la página del valor; «Ejemplo ilustrativo» siempre visible; cierre «El evento termina; la conexión continúa.» |
+| 6 Laura | Laura llega por el contenido. Se lleva una conexión. | 6.1–6.6 | kept | línea temporal solo texto (sin imágenes), mismo lenguaje que la página del valor; «Ejemplo ilustrativo» siempre visible; cierre «El evento termina; la conexión continúa.» y beat final con el valor: «Biavent hizo más fácil pasar de asistir a conectar.» |
 | 7 Cierre | Biavent conecta eventos con personas y personas entre sí. | 7.1–7.3 | kept | logo grande en 8.2; QR a biavent.com grande en 7.3. Sin retratos (ya se usaron) |
 
 ## Real artefacts

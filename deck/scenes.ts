@@ -115,7 +115,12 @@ export const SCENES: SceneDef[] = [
       },
       {
         name: 'cierre del relato', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
-        source: 'El evento ya terminó, pero la relación que empezó allí sigue creciendo. Para Laura, Biavent hizo más fácil pasar de asistir a conectar.',
+        source: 'El evento ya terminó, pero la relación que empezó allí sigue creciendo.',
+      },
+      {
+        name: 'valor', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
+        source: 'Para Laura, Biavent hizo más fácil pasar de asistir a conectar.',
+        note: 'El valor de usar Biavent. No atribuyas resultados medidos: Laura es un ejemplo ilustrativo.',
       },
     ],
   },

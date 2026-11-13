@@ -96,8 +96,13 @@ function Laura_() {
       })}
 
       {/* 06.5 */}
-      <Reveal on={here && b >= 4} x={150} y={900}>
+      <Reveal on={here && b === 4} out={here && b > 4} x={150} y={900}>
         <div className="t-statement" style={{ fontSize: 66, color: 'var(--accent)' }}>El evento termina; la conexión continúa.</div>
+      </Reveal>
+
+      {/* 06.6 the value of using Biavent */}
+      <Reveal on={here && b >= 5} x={150} y={900}>
+        <div className="t-statement" style={{ fontSize: 60, color: 'var(--accent)' }}>Biavent hizo más fácil pasar de asistir a conectar.</div>
       </Reveal>
     </>
   );
