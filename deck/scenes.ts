@@ -127,7 +127,7 @@ export const SCENES: SceneDef[] = [
       {
         name: 'valor', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
         source: 'Para Laura, Biavent hizo más fácil pasar de asistir a conectar.',
-        note: 'El porqué de usar Biavent. «Compartir sala no basta» es redacción propia, no del guion: cámbiala si no te encaja. No atribuyas resultados medidos.',
+        note: 'El porqué de usar Biavent, en tres ideas del guion: sabe que asistirán personas con objetivos parecidos; facilita que los asistentes se encuentren; la conversación continúa por chat. «Compartir sala no basta» es redacción propia: cámbiala si no te encaja. No atribuyas resultados medidos.',
       },
     ],
   },
