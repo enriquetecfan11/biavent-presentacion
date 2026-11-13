@@ -9,7 +9,7 @@ function Cierre_() {
     <>
       <Reveal on={here && b === 0} out={here && b > 0} x={150} y={300}>
         <div className="t-statement" style={{ fontSize: 132, lineHeight: 1 }}>
-          ¿Cuántas conversaciones<br />interesantes se quedan<br />sin empezar<span style={{ color: 'var(--accent)' }}>?</span>
+          ¿Cuántas conversaciones<br />interesantes se quedan<br />sin empezar?
         </div>
       </Reveal>
 
@@ -26,7 +26,7 @@ function Cierre_() {
         <Logo height={200} />
       </Reveal>
       <Reveal on={here && b === 2} x={160} y={420}>
-        <div className="t-statement" style={{ fontSize: 220 }}>Gracias<span style={{ color: 'var(--accent)' }}>.</span></div>
+        <div className="t-statement" style={{ fontSize: 220 }}>Gracias.</div>
       </Reveal>
       <Reveal on={here && b === 2} x={170} y={720} delay={200}>
         <div className="t-meta" style={{ fontSize: 24 }}>{config.author}</div>

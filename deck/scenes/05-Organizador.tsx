@@ -11,7 +11,7 @@ function Organizador_() {
     <>
       <Reveal on={here} x={150} y={200}>
         <div className="t-statement" style={{ fontSize: 100, lineHeight: 1.02 }}>
-          Organizar mejor y entender<br />qué ocurre en el evento<span style={{ color: 'var(--accent)' }}>.</span>
+          Organizar mejor y entender<br />qué ocurre en el evento.
         </div>
       </Reveal>
       <Reveal on={here && b >= 0} x={168} y={560} delay={300}>
