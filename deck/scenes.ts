@@ -33,17 +33,7 @@ export const SCENES: SceneDef[] = [
     ],
   },
   {
-    id: '03', title: 'QUIÉNES SOMOS',
-    beats: [
-      {
-        name: 'creadores', ref: 'presentacion.md · Página 3 — Presentación de los creadores (0:30)',
-        source: 'Aquí nos presentamos nosotros: somos Enrique Rodríguez e Isabel Gutiérrez, creadores de Biavent. Creamos Biavent porque queremos que los eventos ayuden a las personas a encontrarse y que esas conexiones puedan continuar después.',
-        note: '0:30.',
-      },
-    ],
-  },
-  {
-    id: '04', title: 'EL ASISTENTE',
+    id: '03', title: 'EL ASISTENTE',
     beats: [
       {
         name: 'descubrir', ref: 'presentacion.md · Página 4 — La experiencia del asistente (1:30)',
@@ -67,7 +57,7 @@ export const SCENES: SceneDef[] = [
     ],
   },
   {
-    id: '05', title: 'EL ORGANIZADOR',
+    id: '04', title: 'EL ORGANIZADOR',
     beats: [
       {
         name: 'gestión', ref: 'presentacion.md · Página 5 — La experiencia del organizador (1:30)',
@@ -82,7 +72,7 @@ export const SCENES: SceneDef[] = [
     ],
   },
   {
-    id: '06', title: 'EL VALOR',
+    id: '05', title: 'EL VALOR',
     beats: [
       {
         name: 'antes', ref: 'presentacion.md · Página 6 — El valor de Biavent (3:00)',
@@ -104,7 +94,7 @@ export const SCENES: SceneDef[] = [
     ],
   },
   {
-    id: '07', title: 'LAURA',
+    id: '06', title: 'LAURA',
     beats: [
       {
         name: 'llega', ref: 'presentacion.md · Página 7 — La experiencia de Laura (1:30)',
@@ -130,7 +120,7 @@ export const SCENES: SceneDef[] = [
     ],
   },
   {
-    id: '08', title: 'CIERRE',
+    id: '07', title: 'CIERRE',
     beats: [
       {
         name: 'pregunta', ref: 'presentacion.md · Página 8 — Cierre (0:30)',

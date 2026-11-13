@@ -39,5 +39,5 @@ function Valor_() {
   );
 }
 
-/** 06 EL VALOR — Antes / Durante / Después on a timeline, then the closing line. No screenshots: page 4 already shows them. */
-export const Valor = () => <Scene index={5}><Valor_ /></Scene>;
+/** 05 EL VALOR — Antes / Durante / Después on a timeline, then the closing line. No screenshots: page 4 already shows them. */
+export const Valor = () => <Scene index={4}><Valor_ /></Scene>;

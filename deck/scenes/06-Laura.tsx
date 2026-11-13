@@ -64,5 +64,5 @@ function Laura_() {
   );
 }
 
-/** 07 LAURA — an illustrative example told with details of the app's own screens, one per beat. */
-export const Laura = () => <Scene index={6}><Laura_ /></Scene>;
+/** 06 LAURA — an illustrative example told with details of the app's own screens, one per beat. */
+export const Laura = () => <Scene index={5}><Laura_ /></Scene>;

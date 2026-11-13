@@ -17,7 +17,7 @@ Source: `reference/presentacion.md` (8 páginas, 10 min; incluye dirección visu
 | --- | --- | --- | --- | --- |
 | 1 El reto | ¿Cuántas conversaciones interesantes se quedan sin empezar? | 1.1–1.3 | kept | `image.png` como fondo tenue (28 %) en 1.3; logo pequeño en la esquina. 1.1 standby y 1.2 título son nuevos |
 | 2 Qué es Biavent | Una plataforma para descubrir eventos y conectar a quienes participan. | 2.1–2.2 | kept | `image.png` enmarcada (recorte distinto al de la página 1) en vez de repetir `home.png`; «Para asistentes y organizadores» |
-| 3 Creadores | Retratos + nombres + «Creadores de Biavent» | 3.1 | kept | `enrique.jpg`, `isabel.jpg` mismo tamaño |
+| 3 Creadores | — | — | **cut** | Página eliminada a petición del usuario. Los nombres siguen en el pie del título (1.2) y del cierre (7.3) |
 | 4 Asistente | Descubrir → Participar → Conectar → Continuar | 4.1–4.4 | kept | `home` (Encuentra un evento), `chats` (Habla con asistentes), `qr-final` (Confirma el encuentro). Una captura por paso: home↔Descubrir, chats↔Participar, QR↔Conectar |
 | 5 Organizador | Organizar mejor y entender qué ocurre en el evento | 5.1–5.2 | **incomplete** | Etiquetas «Gestión del evento» / «Participación e interacción». **Falta la captura del panel** |
 | 6 Valor | Antes / Durante / Después + frase final | 6.1–6.4 | kept | solo línea temporal, sin capturas (la página 4 ya las muestra); 4.º beat = «El evento continúa en las relaciones que empiezan allí.» |
@@ -29,7 +29,6 @@ Source: `reference/presentacion.md` (8 páginas, 10 min; incluye dirección visu
 | Artefacto | Archivo | Usado en |
 | --- | --- | --- |
 | Logo | `deck/assets/logo.png` | 1.2, 1.3, 2.x, 8.2, 8.3 |
-| Retratos | `deck/assets/enrique.jpg`, `isabel.jpg` | 3.1 |
 | Eventos | `deck/assets/phone-home.png` (de `home.png`) | 4.x |
 | Detalles | `deck/assets/detail-{home,chats,chats-tabs,qr}.png` | 7.2–7.4 |
 | Chats | `deck/assets/phone-chats.png` (de `chats.png`, **recortada a las filas de Isabel y Quique**) | 4.x |
@@ -50,6 +49,7 @@ Source: `reference/presentacion.md` (8 páginas, 10 min; incluye dirección visu
 
 - «BiaVent» → «Biavent».
 - Sin signos de puntuación en amarillo (solo las flechas «→» de la página 4 mantienen el acento).
+- Eliminada la página de presentación de los creadores (la charla pasa a 7 escenas, unos 9:30).
 - Chats recortada para no mostrar a terceros (el resto de contactos).
 - Mapa de capturas en la página 4 (home/chats/QR → Descubrir/Participar/Conectar).
 - La página 5 no tiene capturas; la ausencia se indica en las notas del presentador.

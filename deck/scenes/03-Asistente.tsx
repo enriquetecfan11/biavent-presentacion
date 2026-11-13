@@ -42,5 +42,5 @@ function Asistente_() {
   );
 }
 
-/** 04 EL ASISTENTE — the journey as a guide, one real screen per step. */
-export const Asistente = () => <Scene index={3}><Asistente_ /></Scene>;
+/** 03 EL ASISTENTE — the journey as a guide, one real screen per step. */
+export const Asistente = () => <Scene index={2}><Asistente_ /></Scene>;

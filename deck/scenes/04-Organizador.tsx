@@ -26,5 +26,5 @@ function Organizador_() {
   );
 }
 
-/** 05 EL ORGANIZADOR — headline and its two labels (captures pending). */
-export const Organizador = () => <Scene index={4}><Organizador_ /></Scene>;
+/** 04 EL ORGANIZADOR — headline and its two labels (captures pending). */
+export const Organizador = () => <Scene index={3}><Organizador_ /></Scene>;

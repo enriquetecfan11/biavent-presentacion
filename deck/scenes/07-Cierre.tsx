@@ -43,5 +43,5 @@ function Cierre_() {
   );
 }
 
-/** 08 CIERRE — the opening question again, the central idea with the logo, thanks (+ QR). */
-export const Cierre = () => <Scene index={7}><Cierre_ /></Scene>;
+/** 07 CIERRE — the opening question again, the central idea with the logo, thanks (+ QR). */
+export const Cierre = () => <Scene index={6}><Cierre_ /></Scene>;

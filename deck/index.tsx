@@ -4,12 +4,11 @@ import { config } from './deck.config';
 import { SCENES } from './scenes';
 import { Reto } from './scenes/01-Reto';
 import { QueEs } from './scenes/02-QueEs';
-import { Quienes } from './scenes/03-Quienes';
-import { Asistente } from './scenes/04-Asistente';
-import { Organizador } from './scenes/05-Organizador';
-import { Valor } from './scenes/06-Valor';
-import { Laura } from './scenes/07-Laura';
-import { Cierre } from './scenes/08-Cierre';
+import { Asistente } from './scenes/03-Asistente';
+import { Organizador } from './scenes/04-Organizador';
+import { Valor } from './scenes/05-Valor';
+import { Laura } from './scenes/06-Laura';
+import { Cierre } from './scenes/07-Cierre';
 
 /** Every layer of the stage, back to front. All stay mounted; each shows itself for its own scene. */
 function Stage() {
@@ -17,7 +16,6 @@ function Stage() {
     <>
       <Reto />
       <QueEs />
-      <Quienes />
       <Asistente />
       <Organizador />
       <Valor />
