@@ -12,9 +12,9 @@ export const SCENES: SceneDef[] = [
       { name: 'standby', note: 'Pantalla en calma mientras la gente se sienta. El primer clic arranca la charla.' },
       { name: 'título', ref: 'presentacion.md · título', source: 'Biavent: eventos que conectan' },
       {
-        name: 'pregunta', ref: 'presentacion.md · 1. El reto de asistir a un evento (1 min)',
+        name: 'pregunta', ref: 'presentacion.md · Página 1 — El reto de asistir a un evento (0:45)',
         source: 'Seguro que alguna vez has ido a un evento, has escuchado ideas interesantes y, al terminar, te has quedado con la sensación de que podrías haber conocido a personas afines. A veces no sabemos quién más está allí, cómo iniciar una conversación o cómo seguir en contacto después.',
-        note: '1 min. Deja la pregunta en pantalla un momento antes de hablar.',
+        note: '0:45. Deja la pregunta en pantalla un momento antes de hablar.',
       },
     ],
   },
@@ -22,12 +22,12 @@ export const SCENES: SceneDef[] = [
     id: '02', title: 'QUÉ ES BIAVENT',
     beats: [
       {
-        name: 'plataforma', ref: 'presentacion.md · 2. Qué es Biavent (1 min)',
+        name: 'plataforma', ref: 'presentacion.md · Página 2 — Qué es Biavent (0:45)',
         source: 'Biavent es una plataforma que conecta eventos con personas y facilita que quienes asisten puedan conocerse, conversar y mantener el contacto.',
-        note: '1 min.',
+        note: '0:45.',
       },
       {
-        name: 'dos experiencias', ref: 'presentacion.md · 2. Qué es Biavent',
+        name: 'pantalla de eventos', ref: 'presentacion.md · Página 2 — Qué es Biavent',
         source: 'Acompaña dos experiencias que se complementan: la de la persona que quiere encontrar eventos y conectar con otros asistentes, y la de quien organiza y quiere ofrecer una experiencia cuidada antes, durante y después del evento.',
       },
     ],
@@ -36,9 +36,9 @@ export const SCENES: SceneDef[] = [
     id: '03', title: 'QUIÉNES SOMOS',
     beats: [
       {
-        name: 'creadores', ref: 'presentacion.md · 3. Quiénes somos (30 s)',
-        source: 'Somos Enrique Rodríguez e Isabel Gutiérrez, creadores de Biavent. Esta idea nace de querer que los eventos ayuden a las personas a encontrarse y que esas conexiones puedan continuar después.',
-        note: '30 s.',
+        name: 'creadores', ref: 'presentacion.md · Página 3 — Presentación de los creadores (0:30)',
+        source: 'Aquí nos presentamos nosotros: somos Enrique Rodríguez e Isabel Gutiérrez, creadores de Biavent. Creamos Biavent porque queremos que los eventos ayuden a las personas a encontrarse y que esas conexiones puedan continuar después.',
+        note: '0:30.',
       },
     ],
   },
@@ -46,21 +46,23 @@ export const SCENES: SceneDef[] = [
     id: '04', title: 'EL ASISTENTE',
     beats: [
       {
-        name: 'descubrir', ref: 'presentacion.md · 4. La experiencia del asistente (2 min)',
-        source: 'La experiencia empieza al descubrir un evento que encaja con sus intereses. Puede consultar la información, inscribirse y prepararse para asistir.',
-        note: '2 min en total. Un beat por verbo.',
+        name: 'descubrir', ref: 'presentacion.md · Página 4 — La experiencia del asistente (1:30)',
+        source: 'La experiencia empieza al descubrir un evento que encaja con los intereses de la persona. Puede consultar la información, inscribirse y prepararse para asistir.',
+        note: '1:30 en total. Captura: eventos.',
       },
       {
-        name: 'participar', ref: 'presentacion.md · 4. La experiencia del asistente',
-        source: 'Una vez dentro, Biavent facilita que encuentre a otros asistentes y pueda iniciar una conexión.',
+        name: 'participar', ref: 'presentacion.md · Página 4 — La experiencia del asistente',
+        source: 'Una vez dentro, Biavent facilita que encuentre a otros asistentes y pueda iniciar una conexión. La conversación puede continuar por chat y ayudar a coordinar un encuentro durante el evento.',
+        note: 'Captura: chats (recortada a las filas de Isabel y Quique).',
       },
       {
-        name: 'conectar', ref: 'presentacion.md · 4. La experiencia del asistente',
-        source: 'La conversación puede continuar por chat y ayudar a coordinar un encuentro durante el evento. Cuando las personas se conocen en persona, la plataforma también permite confirmar ese encuentro.',
+        name: 'conectar', ref: 'presentacion.md · Página 4 — La experiencia del asistente',
+        source: 'Cuando las personas se conocen en persona, la plataforma también permite confirmar ese encuentro.',
+        note: 'Captura: código QR de contacto.',
       },
       {
-        name: 'continuar', ref: 'presentacion.md · 4. La experiencia del asistente',
-        source: 'La experiencia no se limita a estar en la misma sala: puede convertirse en una conversación y, con el tiempo, en una relación profesional o personal.',
+        name: 'continuar', ref: 'presentacion.md · Página 4 — La experiencia del asistente',
+        source: 'Así, la experiencia puede convertirse en una conversación y, con el tiempo, en una relación profesional o personal.',
       },
     ],
   },
@@ -68,13 +70,14 @@ export const SCENES: SceneDef[] = [
     id: '05', title: 'EL ORGANIZADOR',
     beats: [
       {
-        name: 'organizar', ref: 'presentacion.md · 5. La experiencia del organizador (2 min)',
+        name: 'gestión', ref: 'presentacion.md · Página 5 — La experiencia del organizador (1:30)',
         source: 'Desde el panel pueden crear y publicar eventos, gestionar asistentes y comunicaciones, y facilitar el networking entre participantes.',
-        note: '2 min en total.',
+        note: '1:30 en total. TODO: falta la captura del panel del organizador (about-us.png no lo es). Añadirla a reference/assets/.',
       },
       {
-        name: 'entender', ref: 'presentacion.md · 5. La experiencia del organizador',
+        name: 'participación', ref: 'presentacion.md · Página 5 — La experiencia del organizador',
         source: 'Pueden consultar información sobre participación, asistencia e interacción. Esos datos ayudan a entender cómo se vivió el evento y qué aspectos pueden mejorarse en la siguiente edición.',
+        note: 'TODO: falta captura de analíticas.',
       },
     ],
   },
@@ -82,16 +85,20 @@ export const SCENES: SceneDef[] = [
     id: '06', title: 'EL VALOR',
     beats: [
       {
-        name: 'asiste', ref: 'presentacion.md · 6. El valor de Biavent (3 min)',
-        source: 'Durante el evento, la plataforma facilita que los asistentes se encuentren y empiecen a hablar. Útil para quien llega solo, para quien participa por primera vez o para quien busca conocer a personas con intereses concretos.',
-        note: '3 min en total. Recorre antes, durante y después dentro de cada beat.',
+        name: 'antes', ref: 'presentacion.md · Página 6 — El valor de Biavent (3:00)',
+        source: 'Antes, ayuda a que las personas descubran el evento, entiendan qué van a encontrar y lleguen con más contexto. Para quien organiza, es un espacio para presentar el evento y gestionar la información y las inscripciones.',
+        note: '3:00 en total.',
       },
       {
-        name: 'organiza', ref: 'presentacion.md · 6. El valor de Biavent',
-        source: 'Para el organizador, es un espacio para presentar el evento y gestionar la información y las inscripciones. Después, puede revisar datos de participación e interacción para entender qué funcionó y qué mejorar.',
+        name: 'durante', ref: 'presentacion.md · Página 6 — El valor de Biavent',
+        source: 'Durante, facilita que los asistentes se encuentren y empiecen a hablar. Esto puede ser especialmente útil para quien llega solo, para quien participa por primera vez o para quien busca conocer a personas con intereses concretos.',
       },
       {
-        name: 'evento', ref: 'presentacion.md · 6. El valor de Biavent',
+        name: 'después', ref: 'presentacion.md · Página 6 — El valor de Biavent',
+        source: 'Después, las personas pueden continuar el contacto por chat. El organizador puede revisar datos de participación e interacción para entender qué funcionó y qué mejorar.',
+      },
+      {
+        name: 'frase final', ref: 'presentacion.md · Página 6 — El valor de Biavent',
         source: 'Biavent conecta la experiencia de los asistentes con la gestión del evento y ayuda a darle continuidad más allá de una fecha concreta.',
       },
     ],
@@ -100,18 +107,25 @@ export const SCENES: SceneDef[] = [
     id: '07', title: 'LAURA',
     beats: [
       {
-        name: 'llega', ref: 'presentacion.md · 7. Un ejemplo: la experiencia de Laura (2 min 30 s)',
-        source: 'Laura trabaja en un equipo pequeño y quiere ampliar su red profesional, pero no siempre le resulta fácil entrar en conversaciones cuando llega a un evento donde no conoce a nadie. Encuentra en Biavent un encuentro sobre un tema que le interesa, se inscribe y descubre que asistirán personas con intereses parecidos.',
-        note: '2 min 30 s en total.',
+        name: 'llega', ref: 'presentacion.md · Página 7 — La experiencia de Laura (1:30)',
+        source: 'Imaginemos a Laura. Quiere ampliar su red profesional, pero le cuesta entrar en conversaciones cuando llega sola a un evento.',
+        note: '1:30 en total. Laura y Marcos son personajes ilustrativos: no los presentes como usuarios reales.',
       },
       {
-        name: 'Marcos', ref: 'presentacion.md · 7. Un ejemplo: la experiencia de Laura',
-        source: 'Durante la jornada, Laura conoce a Marcos, que intenta resolver un problema similar al suyo desde otro sector. En vez de un intercambio rápido de tarjetas, conversan y se dan cuenta de que pueden ayudarse. Se conectan en Biavent y acuerdan seguir hablando.',
-        note: 'Marcos es un personaje ilustrativo. Cámbialo por una historia real de Biavent si la tienes.',
+        name: 'encuentra', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
+        source: 'Encuentra en Biavent un encuentro sobre un tema que le interesa. Se inscribe y sabe que asistirán personas con objetivos parecidos.',
       },
       {
-        name: 'después', ref: 'presentacion.md · 7. Un ejemplo: la experiencia de Laura',
-        source: 'Unos días después retoman la conversación por chat y organizan una llamada para compartir recursos. El evento ya terminó, pero la relación que empezó allí sigue creciendo.',
+        name: 'Marcos', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
+        source: 'Durante la jornada conoce a Marcos, que está intentando resolver un reto similar desde otro sector. Comparten lo que han probado, descubren que pueden ayudarse y se conectan en Biavent.',
+      },
+      {
+        name: 'continúan', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
+        source: 'Unos días después retoman la conversación por chat y organizan una llamada para compartir recursos.',
+      },
+      {
+        name: 'cierre del relato', ref: 'presentacion.md · Página 7 — La experiencia de Laura',
+        source: 'El evento ya terminó, pero la relación que empezó allí sigue creciendo. Para Laura, Biavent hizo más fácil pasar de asistir a conectar.',
       },
     ],
   },
@@ -119,16 +133,16 @@ export const SCENES: SceneDef[] = [
     id: '08', title: 'CIERRE',
     beats: [
       {
-        name: 'pregunta', ref: 'presentacion.md · 8. Cierre (1 min)',
+        name: 'pregunta', ref: 'presentacion.md · Página 8 — Cierre (0:30)',
         source: 'Volvamos a la pregunta del principio: ¿cuántas conversaciones interesantes se quedan sin empezar?',
-        note: '1 min en total.',
+        note: '0:30 en total.',
       },
       {
-        name: 'idea central', ref: 'presentacion.md · 8. Cierre',
-        source: 'Biavent ayuda a que sea más fácil descubrir eventos, participar y convertir una coincidencia en una conversación que continúa. También da a quienes organizan herramientas para cuidar esa experiencia y aprender de ella.',
+        name: 'idea central', ref: 'presentacion.md · Página 8 — Cierre',
+        source: 'Biavent ayuda a descubrir eventos, participar y convertir una coincidencia en una conversación que continúa.',
       },
       {
-        name: 'gracias', ref: 'presentacion.md · 8. Cierre',
+        name: 'gracias', ref: 'presentacion.md · Página 8 — Cierre',
         source: 'Porque un buen evento puede dejar algo más que una agenda cumplida: puede dejar relaciones que continúan después. Gracias.',
       },
     ],

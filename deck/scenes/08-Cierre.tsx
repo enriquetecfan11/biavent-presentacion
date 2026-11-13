@@ -13,10 +13,13 @@ function Cierre_() {
         </div>
       </Reveal>
 
-      <Reveal on={here && b === 1} out={here && b > 1} x={150} y={320}>
-        <div className="t-statement" style={{ fontSize: 112, lineHeight: 1 }}>
+      <Reveal on={here && b === 1} out={here && b > 1} x={150} y={330}>
+        <div className="t-statement" style={{ fontSize: 100, lineHeight: 1 }}>
           Biavent conecta<br />eventos con personas<br />y personas <span style={{ color: 'var(--accent)' }}>entre sí</span>.
         </div>
+      </Reveal>
+      <Reveal on={here && b === 1} out={here && b > 1} x={1380} y={300} delay={300}>
+        <Logo height={420} />
       </Reveal>
 
       <Reveal on={here && b === 2} x={160} y={140}>
@@ -40,5 +43,5 @@ function Cierre_() {
   );
 }
 
-/** 08 CIERRE — the opening question again, the central idea, thanks (+ QR once qrUrl is set). */
+/** 08 CIERRE — the opening question again, the central idea with the logo, thanks (+ QR). */
 export const Cierre = () => <Scene index={7}><Cierre_ /></Scene>;

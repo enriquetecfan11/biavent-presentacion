@@ -6,3 +6,6 @@ artifacts/
 .DS_Store
 .beatdeck-backup/
 *.beatdeck-new
+
+# Captura completa de chats: nombres y fotos de terceros. Se usa solo el recorte de deck/assets/phone-chats.png
+reference/assets/chats.png
